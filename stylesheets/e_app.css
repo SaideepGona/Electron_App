@@ -3,6 +3,8 @@ body #App_Box{
   height: 90vh;
   vertical-align: middle;
   background-color: rgb(251, 206, 206);
+  border: 5px solid black;
+  padding: 5px;
 }
 
 .main_content_box {
@@ -11,16 +13,22 @@ body #App_Box{
 }
 
 .big_box_top {
-  height: 29%;
+  height: 30%;
   width: 100%;
   vertical-align: middle;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .big_box_bottom {
-  height: 69%;
+  height: 70%;
   width: 100%;
   vertical-align: middle;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 #MCB1 {
@@ -50,6 +58,8 @@ body #App_Box{
 #MCB4 {
   height: 100%;
   position: absolute;
+  border-right: 0px solid black;
+  border-top: 0px solid black;
   left: 0px;
 }
 
@@ -57,4 +67,5 @@ body #App_Box{
   height: 100%;
   position: absolute;
   right: 0px;
+  border-top: 0px solid black;
 }
