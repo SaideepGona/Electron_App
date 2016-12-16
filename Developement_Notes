@@ -1,0 +1,2 @@
+1.) Focus on keeping things as lightweight as possible. Look into garbage collection optimization.
+2.) Focus on making content now, speed optimization later. Doesn't mean code recklessly though. Make note of things that can be accomplished async.

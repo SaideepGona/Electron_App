@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/SaideepGona/Electron_App/issues"
   },
-  "homepage": "https://github.com/SaideepGona/Electron_App#readme"
+  "homepage": "https://github.com/SaideepGona/Electron_App#readme",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
 }
