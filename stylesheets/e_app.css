@@ -1,15 +1,9 @@
 body #App_Box{
   width: 90vw;
   height: 90vh;
-  vertical-align: middle;
   background-color: rgb(251, 206, 206);
   border: 5px solid black;
   padding: 5px;
-}
-
-.main_content_box {
-  background-color: rgb(192, 200, 226);
-  border: 5px solid black;
 }
 
 .big_box_top {
@@ -25,8 +19,13 @@ body #App_Box{
   vertical-align: middle;
 }
 
+.main_content_box {
+  background-color: rgb(192, 200, 226);
+  border: 5px solid black;
+}
+
 h1 {
-  font-size: 1.5em;
+  font-size: 1.6em;
   margin-top: 10px;
   margin-bottom: 5px;
 }
