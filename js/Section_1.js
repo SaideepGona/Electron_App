@@ -1,12 +1,12 @@
 // This is the Javascript for Electron_App section 1 (#MCB1)
 
-  // Account Name
+  // <h1> Account Name
     // On-Ready sets the  value of the #accountname element equal to the current account name
 
-  // Version No.
+  // <div> Version No.
     // On-Ready sets the value of #version_num element equal to the current version number
 
-  // Time
+  // <div> Time
     // Updates the #time element based on current time. Runs it at ready and periodically every xxx milliseconds
     $(document).ready(updateClock);
 
@@ -27,7 +27,14 @@
             hours = hours % 12
           }
 
-        var formatted_time = String(hours) + ':' + String(date.getMinutes()) + ' ' + ampm
+        var minutes = date.getMinutes()
+          if (minutes < 10) {
+            minutes = '0' + String(minutes)
+          } else {
+            minutes = String(minutes)
+          }
+
+        var formatted_time = String(hours) + ':' + minutes + ' ' + ampm
         console.log(formatted_time);
 
         $("#time").text(formatted_time);
