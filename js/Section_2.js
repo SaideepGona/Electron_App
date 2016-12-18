@@ -13,10 +13,10 @@
 
     $("#MCB2").hover(function(){
       $("#MCB2").css("background-color", "white");
-      $("#feed_hover_message").fadeIn(200);
+      $("#feed_hover_message").fadeIn(100);
     },
     function(){
-      $("#MCB2").css("background-color", "rgb(203, 203, 203)");
+      $("#MCB2").css("background-color", "rgb(189, 189, 189)");
       $("#feed_hover_message").fadeOut(200);
       console.log("unhover")
     });
