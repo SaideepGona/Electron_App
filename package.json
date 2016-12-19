@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/SaideepGona/Electron_App#readme",
   "dependencies": {
+    "electron": "^1.4.12",
     "jquery": "^3.1.1"
   }
 }
