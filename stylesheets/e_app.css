@@ -108,7 +108,7 @@ h1 {
   margin-right: auto;
   margin-top: calc(98.9vh*0.2*0.05);
   color: rgb(194, 194, 194);
-  background-color: rgb(30, 31, 30);
+  background-color: rgb(54, 54, 54);
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
 }
@@ -149,6 +149,7 @@ h1 {
   left: 0px;
   width: calc(99.5vw*0.83*.95*0.05);
   height: calc(98.9vh*0.2*0.8*0.6);
+  z-index: 5;
 }
 #MCB3 #study_tile #study_abstract {
   position: absolute;

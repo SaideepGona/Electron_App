@@ -6,7 +6,7 @@
     // On-Ready or when feed is changed, displays name of the current feed
 
   // <div> #feed_hover_message
-    // On ready and be defauly hides message text. On hover over #MCB2, shows message text.
+    // On ready and by default hides message text. On hover over #MCB2, shows message text.
     $(document).ready(function(){
       $("#feed_hover_message").hide();
     })
