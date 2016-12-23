@@ -12,11 +12,11 @@
     })
 
     $("#MCB2").hover(function(){
-      $("#MCB2").css("background-color", "white");
+      $("#MCB2").css("background-color", "rgb(73, 98, 187)");
       $("#feed_hover_message").fadeIn(100);
     },
     function(){
-      $("#MCB2").css("background-color", "rgb(189, 189, 189)");
+      $("#MCB2").css("background-color", "rgb(6, 6, 42)");
       $("#feed_hover_message").fadeOut(200);
       console.log("unhover")
     });

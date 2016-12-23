@@ -1,3 +1,5 @@
 1.) Focus on keeping things as lightweight as possible. Look into garbage collection optimization.
 2.) Focus on making content now, speed optimization later. Doesn't mean code recklessly though. Make note of things that can be accomplished async.
 3.) When to require things in the html? At end or middle?
+4.) The Python backend directories may be cluttered, unclutter once things make sense.
+5.) Make the text fit more reasonably in the boxes (no cutoff)

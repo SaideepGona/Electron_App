@@ -7,14 +7,15 @@
 }
 
 body {
-  background-color: rgb(41, 41, 41);
+  background-image: url(../Images/background_main.png);
   position: relative;
 }
 
 .main_content_box {
-  background-color: rgb(189, 189, 189);
+  background-color: rgb(6, 6, 42);
   border: 0.45vw solid rgb(41, 41, 41);
   padding: 0px;
+  color: white;
 }
 
 h1 {
@@ -49,7 +50,7 @@ h1 {
 }
 
 #MCB1 #account_name,#MCB1 #version_num,#MCB1 #license,#MCB1 #time {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 2px 2px 6px white;
   width: calc(99.5vw*0.17);
   margin: 2px 5px 2px 0px;
   padding-top: 4px 0px 4px 0px;
@@ -113,7 +114,11 @@ h1 {
   position: relative;
 }
 #MCB3 #study_tile div {
+  text-overflow: ellipsis;
   border: 1px solid white;
+  overflow: hidden;
+  display: block;
+  font-size: 1.0vw;
 }
 #MCB3 #study_tile #study_name {
   position: absolute;
@@ -121,6 +126,7 @@ h1 {
   left: 0px;
   width: calc(99.5vw*0.83*.95*0.5);
   height: calc(98.9vh*0.2*0.8*0.2);
+  font-style: italic;
 }
 #MCB3 #study_tile #study_author {
   position: absolute;
@@ -149,7 +155,8 @@ h1 {
   left: 0px;
   width: calc(99.5vw*0.83*.95*0.05);
   height: calc(98.9vh*0.2*0.8*0.6);
-  z-index: 5;
+  background-image: url(../Images/rightarrow2.gif);
+  background-size: calc(99.5vw*0.83*.95*0.05) calc(98.9vh*0.2*0.8*0.6);
 }
 #MCB3 #study_tile #study_abstract {
   position: absolute;
