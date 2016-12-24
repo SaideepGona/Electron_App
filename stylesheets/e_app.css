@@ -24,7 +24,7 @@ h1 {
   margin-bottom: 5px;
 }
 
-/* -----------------Top Portion------------------ */
+/* -----------------Top Portion of Entire App------------------ */
 
 .big_box_top {
   height: calc(98.9vh*0.2);
@@ -201,7 +201,7 @@ h1 {
   height: calc(98.9vh*0.2*0.8*0.4);
 }
 
-/* -----------------Bottom Portion------------------ */
+/* -----------------Bottom Portion of Entire App------------------ */
 
 .big_box_bottom {
   height: calc(98.9vh*0.8);

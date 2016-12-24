@@ -11,13 +11,13 @@
     fs.readFile("package.json", (err, data) => {
       if (err) throw err;
 
-      packagejson = JSON.parse(data)                    // Takes package.json and converts to an object. Pulls the "version" from object
+      packagejson = JSON.parse(data)                                            // Takes package.json and converts to an object. Pulls the "version" from object
       console.log(packagejson);
       version_current = packagejson["version"]
-      version_string = "v" + version_current            // End of block ----------------------------------------------------------------
+      version_string = "v" + version_current                                    // End of block ----------------------------------------------------------------
 
-      $( document ).ready(function() {                  // On ready renders the version number in the corresponding section 1 box-sizing
-        $("#version_num").text(version_string);         // End of block ----------------------------------------------------------------
+      $( document ).ready(function() {                                          // On ready renders the version number in the corresponding section 1 box-sizing
+          $("#version_num").text(version_string);                               // End of block ----------------------------------------------------------------
 
       });
     });
@@ -29,7 +29,7 @@
 
       function updateClock() {
 
-        var date = new Date();                          // Takes the current Date-time info and converts it time format ie.: 9:02 PM.
+        var date = new Date();                                                  // Takes the current Date-time info and converts it time format ie.: 9:02 PM.
         var hours = date.getHours();
         var ampm = 'AM'
           if (hours >= 12) {
@@ -47,9 +47,9 @@
             minutes = String(minutes)
           }
         var formatted_time = String(hours) + ':' + minutes + ' ' + ampm
-        console.log(formatted_time);                     // End of Block --------------------------------------------------------------
+        console.log(formatted_time);                                            // End of Block --------------------------------------------------------------
 
         $("#time").text(formatted_time);
 
       };
-      setInterval(updateClock, 10000);                   // Updates clock every xxxx milliseconds
+      setInterval(updateClock, 10000);                                          // Updates clock every xxxx milliseconds
