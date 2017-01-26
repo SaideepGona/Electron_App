@@ -9,11 +9,16 @@
 body {
   background-image: url(../Images/background_main.png);
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main_content_box {
   background-color: rgb(6, 6, 42);
-  border: 0.45vw solid rgb(41, 41, 41);
+  border-top: 0.45vh solid rgb(41, 41, 41);
+  border-bottom: 0.45vh solid rgb(41, 41, 41);
+  border-left: 0.45vw solid rgb(41, 41, 41);
+  border-right: 0.45vw solid rgb(41, 41, 41);
   padding: 0px;
   color: white;
 }
@@ -24,16 +29,16 @@ h1 {
   margin-bottom: 5px;
 }
 
-/* -----------------Top Portion of Entire App------------------ */
+/* -----------------Top Portion of Entire GUI------------------ */
 
 .big_box_top {
   height: calc(98.9vh*0.2);
   width: 99.5vw;
   vertical-align: middle;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-bottom: 0px;
-  margin-top: 0.3vh;
+  margin-top: 0px;
   position: relative;
 }
 
@@ -201,13 +206,13 @@ h1 {
   height: calc(98.9vh*0.2*0.8*0.4);
 }
 
-/* -----------------Bottom Portion of Entire App------------------ */
+/* -----------------Bottom Portion of Entire GUI------------------ */
 
 .big_box_bottom {
   height: calc(98.9vh*0.8);
   width: 99.5vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0px;
+  margin-right: 0px;
   position: relative;
 }
 
@@ -230,4 +235,45 @@ h1 {
   right: 0px;
   border-top: 0px solid black;
   width: calc(99.5vw*0.83);
+}
+
+.stored_study_blocks {                              /* These classes are for the contents of section 5 of which there can be a variable amount depending on what is saved */                 
+  height: calc(98.9vh*0.8*0.1);
+  width: calc(98.6vw*0.83);
+  position: relative;
+  border: 1px solid white;
+}
+
+.stored_study_blocks_overlay {
+  height: calc(98.9vh*0.8*0.1);
+  width: calc(98.6vw*0.83);
+  position: absolute;
+  top: 0px;
+  border: inherit;
+}
+
+.stored_study_blocks_link {
+  height: calc(98.9vh*0.8*0.1);
+  width: calc(98.6vw*0.83*0.05);
+  position: absolute;
+  left: 0px;
+  border: inherit;
+}
+
+.stored_study_blocks_title {
+  height: calc(98.9vh*0.8*0.1*0.3);
+  width: calc(98.6vw*0.83*0.95);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: inherit;
+}
+
+.stored_study_blocks_abstract {
+  height: calc(98.9vh*0.8*0.1*0.7);
+  width: calc(98.6vw*0.83*0.95);
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border: inherit;
 }

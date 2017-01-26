@@ -27,29 +27,30 @@
 
     $(document).ready(updateClock);
 
-      function updateClock() {
+    function updateClock() {
 
-        var date = new Date();                                                  // Takes the current Date-time info and converts it time format ie.: 9:02 PM.
-        var hours = date.getHours();
-        var ampm = 'AM'
-          if (hours >= 12) {
-            ampm = 'PM'
-          }
-          if ((hours % 12) == 0){
-            hours = 12
-          } else {
-            hours = hours % 12
-          }
-        var minutes = date.getMinutes()
-          if (minutes < 10) {
-            minutes = '0' + String(minutes)
-          } else {
-            minutes = String(minutes)
-          }
-        var formatted_time = String(hours) + ':' + minutes + ' ' + ampm
-        console.log(formatted_time);                                            // End of Block --------------------------------------------------------------
+      var date = new Date();                                                  // Takes the current Date-time info and converts it time format ie.: 9:02 PM.
+      var hours = date.getHours();
+      var ampm = 'AM'
+        if (hours >= 12) {
+          ampm = 'PM'
+        }
+        if ((hours % 12) == 0){
+          hours = 12
+        } else {
+          hours = hours % 12
+        }
+      var minutes = date.getMinutes()
+        if (minutes < 10) {
+          minutes = '0' + String(minutes)
+        } else {
+          minutes = String(minutes)
+        }
+      var formatted_time = String(hours) + ':' + minutes + ' ' + ampm
+      console.log(formatted_time);                                            // End of Block --------------------------------------------------------------
 
-        $("#time").text(formatted_time);
+      $("#time").text(formatted_time);
 
-      };
-      setInterval(updateClock, 10000);                                          // Updates clock every xxxx milliseconds
+    };
+      
+    setInterval(updateClock, 10000);                                          // Updates clock every xxxx milliseconds
