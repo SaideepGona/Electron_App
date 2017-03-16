@@ -277,3 +277,13 @@ h1 {
   bottom: 0px;
   border: inherit;
 }
+
+#MCB5 #TR-buttons-5-bar {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.TR-buttons-5 {
+  float: right;
+}

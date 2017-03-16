@@ -14,7 +14,7 @@ study_data = [
         "ncbi-url": "afadsfdf.com"
     },
     {
-        "title": "Study number three",
+        "title": "Study:",
         "abstract": "abstract for the second study",
         "timestamp": "timestamp2",
         "ncbi-url": "afadsfdf.com"
@@ -26,7 +26,7 @@ study_data = [
 console.log("(5) populate 5")
 
 function populate_5(data) {
-
+    console.log("populating 5")
     html_block = '';
 
     for (i = 0; i < data.length; i++) {
@@ -42,8 +42,26 @@ function populate_5(data) {
         
     }
     
-    $("#MCB5").append(html_block);
+    console.log(study_data[2].title = study_data[2].title + "5")
+
+    $("#MCB5 #main-contents5").html(html_block);
 
 }
+
+// refresh button behavior
+    // On hover
+    $("#MCB5 #refresh-button-5").hover(function(){  
+        $("#MCB5 #refresh-button-5").css("background-color", "rgb(73, 98, 187)");
+    },
+    function(){
+        $("#MCB5 #refresh-button-5").css("background-color", "rgb(6, 6, 42)");
+        console.log("unhover")                                                    // End of block
+    });
+    // On click
+    $("#MCB5 #refresh-button-5").click(function(){                                          // On click of toggle_bar, makes the check box visible. On re-click removes it.
+      populate_5(study_data)
+    });  
+
+// On ready initializations
 
 $(document).ready(populate_5(study_data))
