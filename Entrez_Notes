@@ -1,0 +1,25 @@
+Notes about the Entrez E-Utilities for development and general reference. Based off the lecture: https://www.youtube.com/watch?v=iCFVVexp30o&t=1030s
+
+- Each record has a unique integer ID (UID)
+- Each unique database has their own representation of ID
+
+- Basic Functions
+
+    - ESearch
+        - Input: Text-query
+        - Output: Set of UIDs
+    - ESummary
+        - Input: Set of UIDs
+        - Output: Record Summaries
+    - EFetch
+        - Input: Set of UIDs
+        - Output: Full Data Records
+    - ELink
+        - Input: Set of UIDs from a database
+        - Output: Set of UIDs from another database pertaining to the same topic
+    - EPost
+        - Input: Set of UIDs
+        - Output: Uploads to servers
+
+- ESearch & ESummary
+
