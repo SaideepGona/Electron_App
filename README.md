@@ -4,5 +4,5 @@ This is a desktop app being created using the electron framework. The goal is to
 2.) Store study metadata and carefully manage local repositories.
 3.) Serve as a platform for certain data pre-processing tasks.
 
-Ultimately, the intention here is to simplify tasks that current researchers likely spend unneccesary time on. Style points for doing so with a nice user interface distinct from the bare bones styles that seem to dominate the field.
+Ultimately, the intention here is to simplify tasks that current researchers likely spend unneccesary time on. Style points for doing so with a nice user interface, one that is distinct from the bare bones styles that often dominate.
 
