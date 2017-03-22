@@ -23,3 +23,26 @@ Notes about the Entrez E-Utilities for development and general reference. Based 
 
 - ESearch & ESummary
 
+    - Constructing an ESearch URL
+        - Base URL (Common in ALL database queries): http://eutils.ncbi.nih.gov/entrez/eutils/
+        - ESearch Indicator (Specifies this as an ESearch): esearch.fcgi?
+        - Database and Terms (Actual search fields): db=*your database*&term=*your search*
+        - Base URL + ESearch Indicator + Database and Terms = Full ESearch URL
+        - Remember to use standard web encodings
+    - ESearch Output
+        - XML document
+        - Count: Number of Records
+        - RetMax: Max number of Records UIDs returned 
+        - RetStart: Identifier of starting record being listed
+        - IdList: List of record UIDs being returned
+    - What about an ESummary URL
+        - ESummary Indicator: esummary.fcgi?
+        - db field is the same, but term is replaced by id. 
+        - UIDs are given seperated by commas following "id="
+        - You can also use another field "&usehistory=y" to return a key to your search
+            - Worth looking into for later
+    - ESummary returns docsums
+
+- EFetch
+
+    - 

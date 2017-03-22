@@ -5,7 +5,7 @@
 
 function populate_4(projects) {
     console.log("populating 4")
-    html_block = '<h1> (4) Projects Bar</h1>Organization of projects and saved feed settings';
+    html_block = '';
     for (i = 0; i < projects.length; i++) {
 
         project_title = projects[i];
@@ -15,9 +15,11 @@ function populate_4(projects) {
         
     }
 
-    $("#MCB4").html(html_block);
+    $("#MCB4 #contents-4").html(html_block);
 
-    }
+}
+
+
 
 // On ready initializations
 
