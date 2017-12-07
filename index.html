@@ -1,78 +1,124 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Electron app by SaideepGona</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/e_app.css" media="screen">
-  </head>
-  <body>
-      <div id="BB123" class="big_box_top"> <!-- Top Portion of Entire App -->
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 
-        <div id="MCB1" class="main_content_box">  <!-- SECTION 1 -->
-          <h1 id="account_name">Saideep Gona</h1>
-          <div id="version_num"></div>
-          <div id="time">
-          </div>
-          <div id="license">MIT License</div>
-        </div>
+	Modified by Saideep Gona
+-->
+<html>
+	<head>
+		<title>The Life of a Bacterium</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="stylesheets/main.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/e_app.css" media="screen">
+	</head>
 
-        <div id="MCB2" class="main_content_box">  <!-- SECTION 2 -->
-          <h1 id="current_feed">(2) Live Feed Control</h1>
-          <div id="feed_hover_message">Click to Change Feed</div>
-        </div>
+	<body class="landing">
+		<!-- Banner -->
+			<section id="banner">	
+				<h2>The Life of a Bacterium</h2>
+				<p>Initialize parameters below.</p>
+				<textarea id="initialization">200.0 | 3 | 200 | 30 | 50 | 1 | 13 | 0.5</textarea>
+				<div id="instructionbox" style="color:white">DishRadius | StartingBacteria | Iteration | DrugCutoff | PredCutoff | PredCount | EnergyContent | BasalMetabolism</p>
+				<p>Click "Run" to generate a simulation. When loading completes, click "Refresh" followed by "Display" to display new results.</p>
+				<ul class="actions">
+					<li><a id="RunButton" href="#" class="button big">Run</a></li>
+					<li><a id="RefreshButton" href="#" class="button big">Refresh</a></li>
+					<li><a id="LoadButton" href="#" class="button big">Display</a></li>
+					<li><a id="UpdateButton" href="#" class="button big">Update-Init</a></li>
+				</ul>
 
-        <div id="MCB3" class="main_content_box">  <!-- SECTION 3 -->
-          <div id="study_tile">
-            <div id="study_name">An in-depth investigation on flying pomegranate people eaters</div>
-            <div id="study_author">Citrus et al.</div>
-            <div id="study_journal">Fruit Animal Phylogeny Unlimited Extra Special Edition</div>
-            <div id="study_date">2016</div>
-            <div id="toggle_bar"></div>
-            <div id="study_abstract">Abstract</div>
-            <div id="study_data">Data Info</div>
-            <div id="study_other">Other Info</div>
-            <div id="check_box">
-              <div id="check">Check Img</div>
-              <div id="not_check">Uncheck IMG</div>
-            </div>
-          </div>
-        </div>
-      </div>
+			</section>
+      <div id="load_box" class="circle-loader"></div>
+			<!-- Two -->
+				<section id="two" class="wrapper style2 special content">
+					<div class="container">
+						<header class="major">
+							<h2>Spatial Model</h2>
+	
+						</header>
+							<img src="data/simulation.gif" class="6u" alt="" />
+					</div>
+				</section>
 
-      <div id="BB45" class="big_box_bottom"> <!-- Bottom Portion of Entire App -->
+				<section id="three" class="wrapper style1 special content">
+					<div class="container">
+						<header class="major">
+							<h2>Strain Populations</h2>
+							
+						</header>
+							<img src="data/Population of Cells per Bacteria Strain.png" class="6u" alt="" />
+					</div>
+				</section>
 
-        <div id="MCB4" class="main_content_box">  <!-- SECTION 4 -->
-          <div id="TR-buttons-4-bar">
-            <div id="options-4" class="TR-buttons-5">Options</div>
-            <div id="add-project-4" class="TR-buttons-5">Refresh</div>
-          </div>
-          <h1> (4) Projects Bar</h1>
-          Organization of projects and saved feed settings
-          <div id="contents-4"></div>
-        </div>
+			<!-- Three -->
+				<section id="four" class="wrapper style2 content">
+					<div class="container">
+						<header class="major special">
+							<h2>Phenotypes</h2>
+							<p>Plots of phenotype changes over time</p>
+						</header>
+						<div class="feature-grid">
+							<div class="feature">
+								<div><img src="data/Expected Antibiotic Enzyme Potency.png" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Antibiotic Enzyme Potency</h4>
+										<p>Measure of damage caused by secretion of enzyme</p>
+									</header>
+									<p></p>
+								</div>
+							</div>
+							<div class="feature">
+								<div><img src="data/Expected Resistance Enzyme Potency.png" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Resistance Enzyme Effectiveness</h4>
+										<p>Measure of ability of resistance enzyme to block antibiotic</p>
+									</header>
+									<p></p>
+								</div>
+							</div>
+							<div class="feature">
+								<div><img src="data/Expected Energy Efficiency Value.png" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Energy Efficiancy</h4>
+										<p>Coefficient of energy burn (larger number implies LESS energy efficiency)</p>
+									</header>
+									<p></p>
+								</div>
+							</div>
+							<div class="feature">
+								<div><img src="data/Expected Movement Value.png" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Mobility</h4>
+										<p>Movement units per turn</p>
+									</header>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-        <div id="MCB5" class="main_content_box">  <!-- SECTION 5 -->
-          <h1> (5) Current Workspace</h1>
-          Shows majority of relavent info | Displays saved project content | Opens up data
-          <div> ------------  </div>
-          <div id="TR-buttons-5-bar">
-            <div id="options-5" class="TR-buttons-5">Options</div>
-            <div id="refresh-button-5" class="TR-buttons-5">Refresh</div>
-          </div>
-          <div id="main-contents5"></div>
-        </div>
-      </div>
+				<button class="button big content" onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+		<!-- Footer -->
+			<footer id="footer">
+				Kwanho Kim, Saideep Gona, Xinling Li, Zhenyu Yang
+			</footer>
 
-      <script>window.$ = window.jQuery = require('jquery');</script>
-      <script type="text/javascript" src="package.json"></script>
-      <script type="text/Javascript" src="js/Value_Initializations.js"></script>
-      <script type="text/Javascript" src="js/Section_1.js"></script>
-      <script type="text/Javascript" src="js/Section_2.js"></script>
-      <script type="text/Javascript" src="js/Section_3.js"></script>
-      <script type="text/Javascript" src="js/Section_4.js"></script>
-      <script type="text/Javascript" src="js/Section_5.js"></script>
-      <script type="text/javascript" src="js/Backend.js"></script>
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>window.$ = window.jQuery = require('jquery');</script>
+    		<script type="text/javascript" src="package.json"></script>
+    		<script type="text/Javascript" src="js/Update.js"></script>
+			<script type="text/javascript" src="js/Backend.js"></script>
 
-  </body>
+	</body>
 </html>
